@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.clock-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(51, 80, 85);
+  overflow: auto;
+}
+.clock {
+  width: 250px;
+  height: 250px;
+  border: 10px solid rgb(36, 38, 48);
+  background-color: rgb(59, 56, 71);
+  border-radius: 50%;
+  margin: 200px auto;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: inset 0 5px 25px rgb(90, 83, 83),
+    inset 0 -5px 25px rgb(90, 83, 83), 0 5px 25px rgb(32, 19, 19);
+}
+.clock li {
+  position: absolute;
+  font-size: 30px;
+  width: 90%;
+  height: 90%;
+  padding: 5px;
+  margin: 10px;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 5555;
+}
+.clock li span {
+  display: block;
+}
+.clock li:nth-child(1) {
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+.clock li:nth-child(1) span {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+.clock li:nth-child(2) {
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+}
+.clock li:nth-child(2) span {
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+}
+.clock li:nth-child(3) {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.clock li:nth-child(3) span {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.clock li:nth-child(4) {
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+}
+.clock li:nth-child(4) span {
+  transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+}
+.clock li:nth-child(5) {
+  transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+}
+.clock li:nth-child(5) span {
+  transform: rotate(-150deg);
+  -webkit-transform: rotate(-150deg);
+  -moz-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+}
+.clock li:nth-child(6) {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.clock li:nth-child(6) span {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.clock li:nth-child(7) {
+  transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+}
+.clock li:nth-child(7) span {
+  transform: rotate(-210deg);
+  -webkit-transform: rotate(-210deg);
+  -moz-transform: rotate(-210deg);
+  -ms-transform: rotate(-210deg);
+  -o-transform: rotate(-210deg);
+}
+.clock li:nth-child(8) {
+  transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+}
+.clock li:nth-child(8) span {
+  transform: rotate(-240deg);
+  -webkit-transform: rotate(-240deg);
+  -moz-transform: rotate(-240deg);
+  -ms-transform: rotate(-240deg);
+  -o-transform: rotate(-240deg);
+}
+
+.clock li:nth-child(9) {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.clock li:nth-child(9) span {
+  transform: rotate(-270deg);
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+}
+
+.clock li:nth-child(10) {
+  transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+}
+.clock li:nth-child(10) span {
+  transform: rotate(-300deg);
+  -webkit-transform: rotate(-300deg);
+  -moz-transform: rotate(-300deg);
+  -ms-transform: rotate(-300deg);
+  -o-transform: rotate(-300deg);
+}
+
+.clock li:nth-child(11) {
+  transform: rotate(330deg);
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+}
+.clock li:nth-child(11) span {
+  transform: rotate(-330deg);
+}
+
+.seconds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: clockMove 60s steps(60, end) infinite;
+}
+.seconds::before {
+  content: "";
+  width: 2px;
+  height: 70px;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  background-color: aqua;
+}
+
+.minutes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: clockMove 3600s steps(60, end) infinite;
+}
+.minutes::before {
+  content: "";
+  width: 5px;
+  height: 73px;
+  position: absolute;
+  top: 29%;
+  left: 60%;
+  background-color: rgb(23, 28, 30);
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+}
+.hours {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* animation: clockMove 10s steps(60, end) infinite; */
+}
+.hours::before {
+  content: "";
+  width: 5px;
+  height: 55px;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+
+  background-color: rgb(23, 28, 30);
+  transform: rotate(300deg);
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+}
+
+@keyframes clockMove {
+  to {
+    transform: rotate(360deg);
+  }
+}
